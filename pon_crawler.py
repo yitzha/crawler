@@ -3,7 +3,7 @@ import urllib.request as req
 url = "https://www.ptt.cc/bbs/movie/index.html"
 #建立一個Request 物件，附加 Header的資訊
 request = req.Request(url, headers={
-    "User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+    "User-Agent":#""
 })
 with req.urlopen(request) as response:
     data = response.read().decode("utf-8")
